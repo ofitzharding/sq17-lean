@@ -37,9 +37,19 @@ through `native_decide`. This follows the same trust model used by the
 [eleven-square formalization](https://github.com/Queuingtheorydotcom/11SquaresFormalized).
 This is not a kernel-only computation claim.
 
-**Clean-build validation is in progress.** The source package is complete,
-and every archived source has passed its hash check. A fresh Linux replay
-of the full package is running; its completion has not yet been reported.
+**Clean source rebuild passed.** All 4,951 modules in the final theorem's
+import closure were rebuilt from the published sources on Linux with Lean
+4.34.1. No precompiled project proof objects from the research checkout were
+used; the pinned third-party dependency cache was reused. Independent checks
+were distributed between two Linux machines, with source, dependency and
+native-library hashes checked before accepting their outputs. The final
+theorem's axiom set exactly matches the local build, and both optional controls
+passed. See the [verification receipt](verification/clean-build-receipt.json)
+and [full axiom report](verification/Square17Optimality.log).
+
+The trust boundary includes the Lean compiler, native evaluator and C toolchain.
+The receipt records successful reproduction; it does not replace the proof
+sources or the stated trust assumptions.
 
 ## Verify and build
 

@@ -80,8 +80,8 @@
       "sha256": "b0af6e790fb4a2f24b7f6f3ee8ed8b456a030817445b459371ca29bf3551322f"
     },
     "README.md": {
-      "bytes": 6178,
-      "sha256": "afaf36c2a4968a557d81a1020cf870a46eef0b42d1c4c0dad2efdf427a3433c8"
+      "bytes": 6820,
+      "sha256": "6545525c8833c093bf26c7ba2175433809facf6359884d2ce10da8219ae28cca"
     },
     "lake-manifest.json": {
       "bytes": 3147,
@@ -102,6 +102,22 @@
     "scripts/unpack.py": {
       "bytes": 6049,
       "sha256": "965649946fb67936acf8211c6924540355fb9cc080cf8503d837457b6e50e3fe"
+    },
+    "verification/HalfPlaneBoundaryControl.log": {
+      "bytes": 254,
+      "sha256": "b40c54d60cf4c8dcd806f1a363e3ad44d8c6cbc8391df3af4353e3ad22dc4ef1"
+    },
+    "verification/HalfPlanePositiveControl.log": {
+      "bytes": 386,
+      "sha256": "d8ed9f61a0f13e1d2e452f4f673a7e920f91cc01d3cea70a14a0db94ab5f4a02"
+    },
+    "verification/Square17Optimality.log": {
+      "bytes": 1115493,
+      "sha256": "5e74c4afe1e55f1e1c64193eb9a06aa413075a7355ad5faa108c4930da8ac241"
+    },
+    "verification/clean-build-receipt.json": {
+      "bytes": 999,
+      "sha256": "8ca4de25a3ffa609e7ac656573cde768f9b89e143ac48a3983d5636ebabe401d"
     }
   },
   "schema": "sq17-source-release-v1",
