@@ -103,11 +103,21 @@ mathematical definitions and the complete proof.
 
 John Bidwell discovered the packing in 1998, improving Pertti Hämäläinen's
 1980 arrangement; see [Friedman's survey](https://erich-friedman.github.io/papers/squares.pdf).
-The [Squares Project](https://github.com/jlevy/squares) collects the wider
-research record. Mannaseh Ahmed and collaborators' [eleven-square
-formalization](https://github.com/Queuingtheorydotcom/11SquaresFormalized)
-provided a useful reference for computer-assisted formalization and its trust
-boundary. David MacIver's [earlier Lean work](https://github.com/DRMacIver/square-packing-research)
+This proof builds on the [Squares Project](https://github.com/jlevy/squares)
+contributors' 24-cell cover, census framework, endpoint chart and layout,
+subpattern work, and local rigidity framework. We specifically acknowledge
+[wand125's subpattern contributions](https://github.com/jlevy/squares/issues/472),
+eleven of which are used here, and Marc Overbeck's September endpoint seed data,
+used through the Squares Project's
+[root certificate](https://github.com/jlevy/squares/blob/cc8c3c4214395c6d6fe6d6f7d793ccd937b421b0/packing/campaign/series/series-000-smoke-and-calibration/results/exp-237-n17-polynomial-root/run-001/certificate.json).
+The present work completes the remaining exclusions and capture and formalizes
+the argument in Lean, with its own checked exclusion certificates.
+
+Manasseh Ahmed's eleven-square proof and the
+[eleven-square formalization](https://github.com/Queuingtheorydotcom/11SquaresFormalized)
+provided methodological references for finite exclusion, capture, the local
+endpoint argument, and the native-checking trust boundary. David MacIver's
+[earlier Lean work](https://github.com/DRMacIver/square-packing-research)
 concerns a lower bound for seventeen squares.
 
 A search on 12 October 2026 of public Lean repositories, theorem statements,
@@ -119,7 +129,8 @@ its global optimality.
 Marc Overbeck published an independent [candidate proof of seventeen-square
 optimality](https://github.com/Kleddamag/the-seventeenth-square-candidate)
 on 12 October 2026, using mathematical arguments and Python and JavaScript
-certificate checkers. This repository presents a separate Lean formalization.
+certificate checkers. This proof was developed independently of Marc Overbeck's
+October candidate proof; it shares the earlier foundations acknowledged above.
 
 This project was developed with substantial assistance from Claude and Codex.
 The published theorem, source files and explicit trust boundary are the basis
